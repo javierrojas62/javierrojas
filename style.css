@@ -1,0 +1,157 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    margin-top: 3vh;
+    padding: 15px;
+}
+#fotoPerfil{
+    width: 40%;
+    border-radius: 15px;
+}
+
+#title_01 {
+    display: flex;
+    flex-direction: column; /* Asegura que el texto se apile verticalmente */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 300px; /* Alto mínimo */
+    padding: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#skills{
+    margin-top: 5vh;
+}
+
+/* certificados */
+/* Estilo de las miniaturas */
+.cert-card {
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+  .cert-card:hover {
+    transform: scale(1.05);
+  }
+  .cert-thumbnail {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  /* Overlay */
+  .cert-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1050;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cert-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+  }
+  
+  .cert-large {
+    width: 100%;
+    height: auto;
+    max-height: 90vh; /* Ajusta para evitar que la imagen sea demasiado alta */
+    display: block;
+    margin: auto;
+  }
+  
+  /* Botón de cierre */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    z-index: 1100;
+    transition: transform 0.3s;
+  }
+  .close-btn:hover {
+    transform: scale(1.2);
+  }
+
+  /* redes */
+/* Contenedor flotante */
+.floating-icons {
+    position: fixed;
+    bottom: 10px; /* Ajusta el botón principal más cerca del borde */
+    right: 20px; /* Alineado a la derecha */
+    z-index: 1000;
+    display: flex;
+    flex-direction: column-reverse; /* Para que el ícono principal esté al final */
+    align-items: center;
+}
+
+/* Estilo de los íconos */
+.icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Imágenes dentro de los íconos */
+.icon img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Íconos hijos inicialmente ocultos */
+.child-icon {
+    opacity: 0;
+    position: absolute;
+    transform: translateY(0); /* Mantener la posición inicial */
+    pointer-events: none;
+    margin-bottom: 10px; /* Espaciado entre íconos */
+}
+
+/* Íconos desplegados */
+.floating-icons.open .child-icon {
+    opacity: 1;
+    transform: translateY(calc(-60px * var(--index))); /* Desplazarlos hacia arriba acumulativamente */
+    pointer-events: auto;
+}
+
+/* Ícono principal */
+.main-icon {
+    margin-bottom: 0; /* Elimina márgenes extra */
+}
+
+/* Estilo para los iconos */
+.icono {
+    width: 50px; 
+    height: 50px; 
+    transition: transform 0.3s ease; 
+}
+
+.icono:hover {
+    transform: scale(1.2); 
+}
+
+p{
+    color: black;
+}

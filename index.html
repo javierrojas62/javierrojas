@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javier Rojas</title>
+    <link rel="shortcut icon" href="./img/console.svg" type="image/x-icon">
+
+    <!-- self js -->
+    <script src="./main.js" defer></script>
+    <!-- boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
+            <div class="container-fluid">
+                <img src="./img/console.svg" class="navbar-brand" alt="">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="var1" href="#"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="var2" href="#"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="var3" href="#"></a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Selector de idioma -->
+                <div class="form-check form-switch ms-3">
+                    <input class="form-check-input" type="checkbox" id="languageSwitch">
+                    <label class="form-check-label" for="languageSwitch">English</label>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="mt-5">
+
+        <!-- redes -->
+        <div class="floating-icons">
+            <div class="icon main-icon" id="toggleIcons">
+                <img src="./img/red/ph--share-network-fill.svg" alt="Icono redes" />
+            </div>
+            <div class="icon child-icon" id="whatsapp" style="--index: 1;">
+                <a href="https://wa.me/+5492644853601" target="_blank">
+                    <img src="./img/red/ri--whatsapp-fill.svg" alt="WhatsApp" />
+                </a>
+            </div>
+            <div class="icon child-icon" id="mail" style="--index: 2;">
+                <a href="mailto:javierrojas62@gmail.com" target="_blank">
+                    <img src="./img/red/mingcute--mail-line.svg" alt="Mail" />
+                </a>
+            </div>
+            <div class="icon child-icon" id="github" style="--index: 3;">
+                <a href="https://github.com/javierrojas62" target="_blank">
+                    <img src="./img/red/ri--github-fill.svg" alt="GitHub" />
+                </a>
+            </div>
+        </div>
+        <!-- text & img -->
+
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="./img/I.jpeg" class="img-fluid" id="fotoPerfil" alt="fotoPerfil">
+                </div>
+                <div class="col-md-6" style="margin-top: 15px;">
+                    <h3 id="title_01"></h3>
+                </div>
+            </div>
+        </div>
+
+        <section id="skills">
+            <h4 id="subtext01" class="text-center"></h4>
+            <div class="container-fluid">
+                <!-- Contenedor flex con alineación de iconos -->
+                <div class="d-flex justify-content-center gap-3 flex-wrap" style="padding: 3vh;">
+                    <img src="./img/tec/logos--css-3.svg" alt="CSS" class="icono">
+                    <img src="./img/tec/logos--html-5.svg" alt="HTML" class="icono">
+                    <img src="./img/tec/skill-icons--javascript.svg" alt="JavaScript" class="icono">
+                    <img src="./img/tec/logos--figma.svg" alt="Figma" class="icono">
+                    <img src="./img/tec/logos--flask.svg" alt="Flask" class="icono">
+                    <img src="./img/tec/logos--python.svg" alt="Python" class="icono">
+                    <img src="./img/tec/devicon--postgresql-wordmark.svg" alt="PostGreSQL" class="icono">
+                    <img src="./img/tec/icons8-c-programación.svg" alt="C" class="icono">
+                    <img src="./img/tec/icons8-c.svg" alt="C++" class="icono">
+                    <img src="./img/tec/icons8-oreja.svg" alt="Boostrap" class="icono">
+                    <img src="./img/tec/skill-icons--sass.svg" alt="Sass" class="icono">
+                    <img src="./img/tec/skill-icons--kafka.svg" alt="Kafka" class="icono">
+                    <img src="./img/tec/skill-icons--kubernetes.svg" alt="Kubernets" class="icono">
+                    <img src="./img/tec/logos--nodejs.svg" alt="Node js" class="icono">
+                    <img src="./img/tec/skill-icons--git.svg" alt="Git" class="icono">
+                </div>
+            </div>
+        </section>
+
+
+        <section id="certificates" class="py-5">
+            <div class="container text-center">
+                <h4 class="mb-4" id="subtext02"></h4>
+                <div class="row g-4">
+                    <!-- Certificado 1 -->
+                    <div class="col-12 col-md-4">
+                        <div class="cert-card">
+                            <img src="./img/cer/Desarrollo Web.png" class="cert-thumbnail" alt="Certificado 1"
+                                onclick="showCert('./img/cer/Desarrollo Web.png')">
+                            <h5 class="mt-2" id="cer01"></h5>
+                        </div>
+                    </div>
+                    <!-- Certificado 2 -->
+                    <div class="col-12 col-md-4">
+                        <div class="cert-card">
+                            <img src="./img/cer/U. tres de febrero (2).png" class="cert-thumbnail" alt="Certificado 2"
+                                onclick="showCert('./img/cer/U. tres de febrero (2).png')">
+                            <h5 class="mt-2">Node JS</h5>
+                        </div>
+                    </div>
+                    <!-- Certificado 3 -->
+                    <div class="col-12 col-md-4">
+                        <div class="cert-card">
+                            <img src="./img/cer/U. tres de febrero.png" class="cert-thumbnail" alt="Certificado 1"
+                                onclick="showCert('./img/cer/U. tres de febrero.png')">
+                            <h5 class="mt-2" id="cer02"></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Overlay para mostrar el certificado en grande -->
+            <div id="cert-overlay" class="cert-overlay" onclick="closeCert()">
+                <div class="cert-content">
+                    <img id="cert-large" class="cert-large" alt="Certificado ampliado">
+                    <button class="close-btn" onclick="closeCert()">×</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-white text-center py-3" style="background-color: #e3f2fd;">
+        <p>&#169; Todos los derechos reservados a Rojas Informática</p>
+        <div>
+            <!-- Iconos de redes sociales -->
+            <a href="https://www.instagram.com/rojasinformatica" target="_blank" class="mx-2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="Instagram"
+                    width="30" height="30">
+            </a>
+            <a href="https://www.facebook.com/@rojasinformatica1" target="_blank" class="mx-2">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                    alt="Facebook" width="30" height="30">
+            </a>
+        </div>
+    </footer>
+
+
+
+    <!-- boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+</body>
+
+</body>
+
+</html>
