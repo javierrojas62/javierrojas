@@ -21,135 +21,122 @@
     <header class="header-container" id="ini">
         <nav class="nav-wrapper">
             <div class="nav-links">
-                <button class="nav-button" id="projectsButton">Proyectos</button>
+                <a href="#skills" class="nav-button" id="techButton"></a>
                 <div class="logo-container">
                     <a href="#ini" class="logo-inner">
                         <img src="./img/console.svg" alt="Logo">
                     </a>
                 </div>
-                <button class="nav-button" id="techButton">Tecnologías</button>
-                    <!-- Botón de idioma flotante -->
-                    <button id="languageButton" class="language-toggle" aria-label="Cambiar idioma">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <line x1="2" y1="12" x2="22" y2="12"></line>
-                            <path
-                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
-                            </path>
-                        </svg>
-                    </button>
+                <a href="#projects" class="nav-button" id="projectsButton"></a>
+                <!-- Botón de idioma flotante -->
+                <button id="languageButton" class="language-toggle" aria-label="Cambiar idioma">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path
+                            d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                        </path>
+                    </svg>
+                </button>
             </div>
         </nav>
     </header>
 
     <main class="mt-5">
 
-<div class="container-fluid">
-                    <!-- Botón de idioma flotante -->
-                    <!-- <button id="languageButton" class="language-toggle" aria-label="Cambiar idioma">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <line x1="2" y1="12" x2="22" y2="12"></line>
-                            <path
-                                d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
-                            </path>
-                        </svg>
-                    </button>
-                </div> -->
+        <div class="container-fluid">
+            <!-- text & img -->
 
-        <!-- text & img -->
-
-        <div class="container text-center mt-5">
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="./img/I.jpeg" class="img-fluid" id="fotoPerfil" alt="fotoPerfil">
-                </div>
-                <div class="col-md-6" style="margin-top: 15px;">
-                    <h3 id="title_01"></h3>
-                </div>
-            </div>
-        </div>
-
-        <section id="skills">
-            <h4 id="subtext01" class="text-center"></h4>
-            <div class="container-fluid">
-                <!-- Contenedor flex con alineación de iconos -->
-                <div class="d-flex justify-content-center gap-3 flex-wrap" style="padding: 3vh;">
-                    <img src="./img/tec/logos--css-3.svg" alt="CSS" class="icono">
-                    <img src="./img/tec/logos--html-5.svg" alt="HTML" class="icono">
-                    <img src="./img/tec/skill-icons--javascript.svg" alt="JavaScript" class="icono">
-                    <img src="./img/tec/logos--figma.svg" alt="Figma" class="icono">
-                    <img src="./img/tec/logos--flask.svg" alt="Flask" class="icono">
-                    <img src="./img/tec/logos--python.svg" alt="Python" class="icono">
-                    <img src="./img/tec/devicon--postgresql-wordmark.svg" alt="PostGreSQL" class="icono">
-                    <img src="./img/tec/icons8-c-programación.svg" alt="C" class="icono">
-                    <img src="./img/tec/icons8-c.svg" alt="C++" class="icono">
-                    <img src="./img/tec/icons8-oreja.svg" alt="Boostrap" class="icono">
-                    <img src="./img/tec/skill-icons--sass.svg" alt="Sass" class="icono">
-                    <img src="./img/tec/skill-icons--kafka.svg" alt="Kafka" class="icono">
-                    <img src="./img/tec/skill-icons--kubernetes.svg" alt="Kubernets" class="icono">
-                    <img src="./img/tec/logos--nodejs.svg" alt="Node js" class="icono">
-                    <img src="./img/tec/skill-icons--git.svg" alt="Git" class="icono">
-                </div>
-            </div>
-        </section>
-        <section id="projects">
-            <h4 id="subtext02" class="text-center"></h4>
-            <div class="container">
-                <div class="row g-4">
-                    <!-- Card 1 -->
-                    <div class="col-md-6 col-lg-3">
-                        <div class="project-card">
-                            <img src="./img/projects/1.png" class="card-img" alt="Proyecto 1">
-                            <div class="card-content">
-                                <h5 id="project1-title"></h5>
-                                <p id="project1-desc"></p>
-                                <a href="https://javierrojas62.github.io/Noe-Willy/" target="_blank"
-                                    rel="noopener noreferrer" id="project1-btn" class="project-btn"></a>
-                            </div>
-                        </div>
+            <div class="container text-center mt-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="./img/I.jpeg" class="img-fluid" id="fotoPerfil" alt="fotoPerfil">
                     </div>
-                    <!-- Card 2 -->
-                    <div class="col-md-6 col-lg-3">
-                        <div class="project-card">
-                            <img src="./img/projects/2.png" class="card-img" alt="Proyecto 2">
-                            <div class="card-content">
-                                <h5 id="project2-title"></h5>
-                                <p id="project2-desc"></p>
-                                <a href="https://javierrojas62.github.io/rentaFacil/" target="_blank"
-                                    rel="noopener noreferrer" id="project2-btn" class="project-btn"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card 3 -->
-                    <div class="col-md-6 col-lg-3">
-                        <div class="project-card">
-                            <img src="./img/projects/3.png" class="card-img" alt="Proyecto 3">
-                            <div class="card-content">
-                                <h5 id="project3-title"></h5>
-                                <p id="project3-desc"></p>
-                                <a href="https://www.tumejorversion.net.ar/" target="_blank" rel="noopener noreferrer"
-                                    id="project3-btn" class="project-btn"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card 4 -->
-                    <div class="col-md-6 col-lg-3">
-                        <div class="project-card">
-                            <img src="./img/projects/4.png" class="card-img" alt="Proyecto 4">
-                            <div class="card-content">
-                                <h5 id="project4-title"></h5>
-                                <p id="project4-desc"></p>
-                                <a href="https://javierrojas62.github.io/generatePassword/" target="_blank"
-                                    rel="noopener noreferrer" id="project4-btn" class="project-btn"></a>
-                            </div>
-                        </div>
+                    <div class="col-md-6" style="margin-top: 15px;">
+                        <h3 id="title_01"></h3>
                     </div>
                 </div>
             </div>
-        </section>
+
+            <section id="skills">
+                <h4 id="subtext01" class="text-center"></h4>
+                <div class="container-fluid">
+                    <!-- Contenedor flex con alineación de iconos -->
+                    <div class="d-flex justify-content-center gap-3 flex-wrap" style="padding: 3vh;">
+                        <img src="./img/tec/logos--css-3.svg" alt="CSS" class="icono">
+                        <img src="./img/tec/logos--html-5.svg" alt="HTML" class="icono">
+                        <img src="./img/tec/skill-icons--javascript.svg" alt="JavaScript" class="icono">
+                        <img src="./img/tec/logos--figma.svg" alt="Figma" class="icono">
+                        <img src="./img/tec/logos--flask.svg" alt="Flask" class="icono">
+                        <img src="./img/tec/logos--python.svg" alt="Python" class="icono">
+                        <img src="./img/tec/devicon--postgresql-wordmark.svg" alt="PostGreSQL" class="icono">
+                        <img src="./img/tec/icons8-c-programación.svg" alt="C" class="icono">
+                        <img src="./img/tec/icons8-c.svg" alt="C++" class="icono">
+                        <img src="./img/tec/icons8-oreja.svg" alt="Boostrap" class="icono">
+                        <img src="./img/tec/skill-icons--sass.svg" alt="Sass" class="icono">
+                        <img src="./img/tec/skill-icons--kafka.svg" alt="Kafka" class="icono">
+                        <img src="./img/tec/skill-icons--kubernetes.svg" alt="Kubernets" class="icono">
+                        <img src="./img/tec/logos--nodejs.svg" alt="Node js" class="icono">
+                        <img src="./img/tec/skill-icons--git.svg" alt="Git" class="icono">
+                    </div>
+                </div>
+            </section>
+            <section id="projects">
+                <h4 id="subtext02" class="text-center"></h4>
+                <div class="container">
+                    <div class="row g-4">
+                        <!-- Card 1 -->
+                        <div class="col-md-6 col-lg-3">
+                            <div class="project-card">
+                                <img src="./img/projects/1.png" class="card-img" alt="Proyecto 1">
+                                <div class="card-content">
+                                    <h5 id="project1-title"></h5>
+                                    <p id="project1-desc"></p>
+                                    <a href="https://javierrojas62.github.io/Noe-Willy/" target="_blank"
+                                        rel="noopener noreferrer" id="project1-btn" class="project-btn"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="col-md-6 col-lg-3">
+                            <div class="project-card">
+                                <img src="./img/projects/2.png" class="card-img" alt="Proyecto 2">
+                                <div class="card-content">
+                                    <h5 id="project2-title"></h5>
+                                    <p id="project2-desc"></p>
+                                    <a href="https://javierrojas62.github.io/rentaFacil/" target="_blank"
+                                        rel="noopener noreferrer" id="project2-btn" class="project-btn"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="col-md-6 col-lg-3">
+                            <div class="project-card">
+                                <img src="./img/projects/3.png" class="card-img" alt="Proyecto 3">
+                                <div class="card-content">
+                                    <h5 id="project3-title"></h5>
+                                    <p id="project3-desc"></p>
+                                    <a href="https://www.tumejorversion.net.ar/" target="_blank"
+                                        rel="noopener noreferrer" id="project3-btn" class="project-btn"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="col-md-6 col-lg-3">
+                            <div class="project-card">
+                                <img src="./img/projects/4.png" class="card-img" alt="Proyecto 4">
+                                <div class="card-content">
+                                    <h5 id="project4-title"></h5>
+                                    <p id="project4-desc"></p>
+                                    <a href="https://javierrojas62.github.io/generatePassword/" target="_blank"
+                                        rel="noopener noreferrer" id="project4-btn" class="project-btn"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
     </main>
 
     <footer class="footer">

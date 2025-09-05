@@ -11,6 +11,11 @@ body {
   color: #e0e0e0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 main {
   margin-top: 120px;
   /* Ajustado para el header fijo */
